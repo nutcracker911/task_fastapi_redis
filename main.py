@@ -19,7 +19,7 @@ async def write_data_in_redis(item : DataRedis,
     
     return Status(status = "OK")
 
-@app.post(
+@app.get(
     "/check_data/{phone}",
     description = "Метод для чтения данных из Redis"
 )
